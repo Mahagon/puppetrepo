@@ -38,8 +38,9 @@ class profile::packages {
         }
         default: {
           package { $packagename:
-            ensure   => if $attributes['ensure'] { $attributes['ensure'] } else { 'latest' },
-            provider => $providername,
+            ensure          => if $attributes['ensure'] { $attributes['ensure'] } else { 'latest' },
+            provider        => $providername,
+            install_options => if $attributes['install_options'] { $attributes['install_options'] } else { [] }
           }
         }
       }

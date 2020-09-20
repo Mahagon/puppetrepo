@@ -1,0 +1,35 @@
+---
+packages:
+  chocolatey:
+    blender:
+      ensure: latest
+    nvidia-display-driver:
+      ensure: '456.38'
+      install_options:
+        - -params
+        - '"'
+        - /DCH
+        - /HDAudio
+        - '"'
+    pdk:
+      ensure: latest
+    vagrant:
+      ensure: latest
+    virtualbox:
+      ensure: latest
+      install_options:
+        - -params
+        - '"'
+        - /NoDesktopShortcut
+        - /ExtensionPack
+        - '"'
+      logitechgaming:
+        ensure: latest
+      steam:
+        ensure: latest
+      epicgameslauncher:
+        ensure: latest
+      uplay:
+        ensure: latest
+classes:
+  - profile::packages

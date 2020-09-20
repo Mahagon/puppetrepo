@@ -1,0 +1,48 @@
+---
+packages:
+  chocolatey:
+    puppet-agent:
+      ensure: 6.18
+    7zip:
+      ensure: latest
+    git:
+      ensure: latest
+    gopass:
+      ensure: latest
+    imageglass:
+      ensure: latest
+    microsoft-teams:
+      ensure: latest
+    openssl:
+      ensure: latest
+    winscp:
+      ensure: latest
+    powershell-core:
+      ensure: latest
+    chocolatey:
+      ensure: latest
+    spotify:
+      ensure: latest
+    vscode:
+      ensure: latest
+    plex:
+      ensure: latest
+    python3:
+      ensure: latest
+    microsoft-office-deployment:
+      ensure: latest
+      install_options:
+        - -params
+        - '"'
+        - /Channel:Current
+        - /Product:O365HomePremRetail
+        - '"'
+    firefox:
+      ensure: latest
+      install_options:
+        - -params
+        - '"'
+        - /NoDesktopShortcut
+        - '"'
+classes:
+  - profile::packages

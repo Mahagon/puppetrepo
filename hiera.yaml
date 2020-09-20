@@ -1,5 +1,7 @@
 version: 5
 hierarchy:
+  - name: "Nodes"
+    path: "nodes/%{facts.clientcert}.yaml"
   - name: "Per-OS defaults"
     path: "os/%{facts.os.family}.yaml"
   - name: "Common"
