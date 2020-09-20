@@ -1,0 +1,96 @@
+---
+keyboard: de
+packages:
+  pacman:
+    linux-lts:
+      ensure: latest
+    sudo:
+      ensure: latest
+    binutils:
+      ensure: latest
+    htop:
+      ensure: latest
+    vim:
+      ensure: latest
+    git:
+      ensure: latest
+    make:
+      ensure: latest
+    fakeroot:
+      ensure: latest
+    xorg:
+      ensure: latest
+    xorg-server:
+      ensure: latest
+    libxkbcommon:
+      ensure: latest
+    plasma-desktop:
+      ensure: latest
+    plasma-nm:
+      ensure: latest
+    kscreen:
+      ensure: latest
+    plasma5-applets-active-window-control:
+      ensure: latest
+    sddm:
+      ensure: latest
+    dolphin:
+      ensure: latest
+    konsole:
+      ensure: latest
+    dmenu:
+      ensure: latest
+    firefox:
+      ensure: latest
+    vlc:
+      ensure: latest
+    noto-fonts:
+      ensure: latest
+    noto-fonts-cjk:
+      ensure: latest
+    noto-fonts-emoji:
+      ensure: latest
+    noto-fonts-extra:
+      ensure: latest
+    gopass:
+      ensure: latest
+    ansible:
+      ensure: latest
+  yay:
+    visual-studio-code-bin:
+      ensure: latest
+    powershell-bin:
+      ensure: latest
+    teams:
+      ensure: latest
+    # yay-bin:
+    #   ensure: latest
+    # lib32-llvm-libs-git:
+    #   ensure: latest
+    # lib32-vmaf:
+    #   ensure: latest
+    # lib32-llvm-git:
+    #   ensure: latest
+    # dri2proto-git:
+    #   ensure: latest
+    # lib32-eudev:
+    #   ensure: latest
+    # lib32-ffmpeg:
+    #   ensure: latest
+    # wine:
+    #   ensure: latest
+    # wine-mono:
+    #   ensure: latest
+services:
+  sddm:
+    enable: true
+  NetworkManager:
+    enable: true
+    reboottype: finished
+timezone: Europe/Berlin
+classes:
+  - profile::keyboard
+  - profile::timezone
+  - profile::reboot
+  - profile::packages
+  - profile::services
