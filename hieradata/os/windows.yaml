@@ -35,6 +35,8 @@ packages:
       ensure: latest
     hexchat:
       ensure: latest
+    miktex:
+      ensure: latest
     vim:
       ensure: latest
     microsoft-office-deployment:
