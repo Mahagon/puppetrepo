@@ -2,7 +2,7 @@
 packages:
   chocolatey:
     puppet-agent:
-      ensure: 6.18
+      ensure: '6.18'
     7zip:
       ensure: latest
     git:
