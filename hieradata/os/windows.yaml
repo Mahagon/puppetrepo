@@ -29,6 +29,14 @@ packages:
       ensure: latest
     python3:
       ensure: latest
+    discord:
+      ensure: latest
+    teamspeak:
+      ensure: latest
+    hexchat:
+      ensure: latest
+    vim:
+      ensure: latest
     microsoft-office-deployment:
       ensure: latest
       install_options:
