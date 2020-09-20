@@ -1,6 +1,6 @@
 # install/uninstall/update programs
 class profile::packages {
-  lookup('packages', Hash, 'hash').each | String $providername, Hash $providerattributes | {
+  lookup('packages', Hash, 'deep').each | String $providername, Hash $providerattributes | {
     if $providername == 'yay' {
       $yaycodedir='/tmp/yay-bin'
       vcsrepo { $yaycodedir:
