@@ -54,5 +54,7 @@ packages:
         - '"'
         - /NoDesktopShortcut
         - '"'
+    putty:
+      ensure: latest
 classes:
   - profile::packages
